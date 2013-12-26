@@ -44,6 +44,8 @@ ul h2 {
   line-height: 30px;
   padding-right: 30px;
   text-align: right;
+  -moz-transform: translateX(-100%) rotate(-90deg);
+  -moz-transform-origin: right top;
   -webkit-transform: translateX(-100%) rotate(-90deg);
   -webkit-transform-origin: right top;
 }
@@ -54,6 +56,8 @@ ul li {
   min-height: 100%;
   display: block;
   box-shadow: 5px -5px 14px rgba(0, 0, 0, 0.4);
+  -moz-transform: translateX(0%) rotate(0deg);
+  -moz-transform-origin: right top;
   -webkit-transform: translateX(0%) rotate(0deg);
   -webkit-transform-origin: right top;
 }
