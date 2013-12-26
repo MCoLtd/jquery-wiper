@@ -143,6 +143,12 @@
 															'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
 															'-moz-transform-origin':'550px 225px',
 													});
+												} else if (ua.indexOf("ie") != -1){
+													li.css({
+															'-ms-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
+															'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
+															'-ms-transform-origin':'550px 225px',
+													});
 												} else {
 													li.css({
 															'transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
@@ -172,6 +178,12 @@
 															'-moz-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
 															'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
 															'-moz-transform-origin':'550px 225px',
+													});
+												} else if (ua.indexOf("ie") != -1){
+													$(this).css({
+															'-ms-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
+															'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
+															'-ms-transform-origin':'550px 225px',
 													});
 												} else {
 													$(this).css({
@@ -205,6 +217,12 @@
 													'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
 													'-moz-transform-origin':'550px 225px',
 											});
+										} else if (ua.indexOf("ie") != -1){
+											li.css({
+													'-ms-transform':'translate3d(0px,0px,0) rotate(0deg)',
+													'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
+													'-ms-transform-origin':'550px 225px',
+											});
 										} else {
 											li.css({
 													'transform':'translate3d(0px,0px,0) rotate(0deg)',
@@ -234,6 +252,12 @@
 															'-moz-transform':'translate3d(0px,0px,0) rotate(0deg)',
 															'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
 															'-moz-transform-origin':'550px 225px',
+													});
+												} else if (ua.indexOf("ie") != -1){
+													$(this).css({
+															'-ms-transform':'translate3d(0px,0px,0) rotate(0deg)',
+															'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
+															'-ms-transform-origin':'550px 225px',
 													});
 												} else {
 													$(this).css({
@@ -269,6 +293,12 @@
 											'-moz-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
 											'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
 											'-moz-transform-origin':'550px 225px',
+									});
+								} else if (ua.indexOf("ie") != -1){
+									li.css({
+											'-ms-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
+											'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
+											'-ms-transform-origin':'550px 225px',
 									});
 								} else {
 									li.css({

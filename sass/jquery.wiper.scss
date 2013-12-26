@@ -20,6 +20,8 @@ ul{
 		line-height:30px;
 		padding-right: 30px;
 		text-align: right;
+		-ms-transform:translateX(-100%) rotate(-90deg);
+		-ms-transform-origin:right top;
 		-moz-transform:translateX(-100%) rotate(-90deg);
 		-moz-transform-origin:right top;
 		-webkit-transform:translateX(-100%) rotate(-90deg);
@@ -32,6 +34,8 @@ ul{
 		min-height: 100%;
 		display: block;
 		box-shadow: 5px -5px 14px rgba(#000, 0.4);
+		-ms-transform:translateX(0%) rotate(0deg);
+		-ms-transform-origin:right top;
 		-moz-transform:translateX(0%) rotate(0deg);
 		-moz-transform-origin:right top;
 		-webkit-transform:translateX(0%) rotate(0deg);
