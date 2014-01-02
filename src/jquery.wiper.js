@@ -115,49 +115,12 @@
                 var s = this;
                 var cur_data_index = Number(li.attr("data-index"));
 
-                //if (li.offset().left < (window_w / 2)) {
                 if (!li.hasClass("wiper_open")) {
                     //move right
                     var menu_top = -455;
                     var menu_rotate = 0;
 
                     var next_num = li.nextAll("li").length;
-                    if (li.attr("data-index") != 0) {
-                        var menu_translateX = options.binder.width() + cur_data_index * 15 - 250;
-                        var move_width = menu_width * (next_num+1);
-												if (ua.indexOf("chrome") != -1){
-													li.css({
-															'-webkit-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
-															'-webkit-transition':'-webkit-transform '+options.duration+'ms ' + options.easing,
-															'-webkit-transform-origin':'550px 225px',
-													});
-												} else if (ua.indexOf("safari") != -1){
-													li.css({
-															'-webkit-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
-															'-webkit-transition':'-webkit-transform '+options.duration+'ms ' + options.easing,
-															'-webkit-transform-origin':'550px 225px',
-													});
-												} else if (ua.indexOf("firefox") != -1){
-													li.css({
-															'-moz-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
-															'-moz-transition':'-moz-transform '+options.duration+'ms ' + options.easing,
-															'-moz-transform-origin':'550px 225px',
-													});
-												} else if (ua.indexOf("ie") != -1){
-													li.css({
-															'-ms-transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
-															'-ms-transition':'-ms-transform '+options.duration+'ms ' + options.easing,
-															'-ms-transform-origin':'550px 225px',
-													});
-												} else {
-													li.css({
-															'transform':'translate3d('+menu_translateX+'px,'+menu_top+'px,0) rotate(-45deg)',
-															'transition':'transform '+options.duration+'ms ' + options.easing,
-															'transform-origin':'550px 225px',
-													});
-												}
-                        li.addClass("wiper_open");
-                    }
                     li.nextAll("li").each(function() {
                         var menu_translateX = options.binder.width() + (Number($(this).attr("data-index"))) * 15 - 250;
                         var move_width = menu_width * (menu_num - (Number($(this).attr("data-index"))));
@@ -322,7 +285,7 @@
     $.fn.Wiper.defaults = {
         easing: 'cubic-bezier(0,0,0.25,1)',
         duration: 1300,
-        offset: 1,
+        offset: 0,
         offsetDelay: 0,
         binder: $(window),
         menuColors: [ '#666699', '#660066', '#20aeb2', '#cc99cc', '#339999', '#228b22' ],
