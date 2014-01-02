@@ -1,6 +1,6 @@
 /*
  * jQuery Plugin: dynamic & easy moving menu. for your web site.
- * Version 1.0.0
+ * Version 1.0.3
  *
  * Copyright (c) 2013 M&Co.Ltd. (http://m-and.co/)
  * Licensed jointly under the GPL and MIT licenses,
